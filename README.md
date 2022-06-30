@@ -1,6 +1,4 @@
-# discord.js v13 complete handler
-
-### Full discord.js v13 handler, including events, commands, aliases, slash commands and context menus! 
+### Full discord.js@v13 handler, including events, commands, aliases, slash commands and context menus! 
 
 ### Dependencies: `discord.js`, `glob`
 
