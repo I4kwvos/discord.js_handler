@@ -18,7 +18,7 @@ const client = new Client({
     ],
     presence: {
         activities: [{
-            name: `discord.js v13 handler`,
+            name: `discord.js handler`,
             type: `COMPETING`
         }],
         status: "dnd"
@@ -29,7 +29,7 @@ const { token } = require(`./config.json`)
 
 client.slashCommands = new Collection()
 client.commands = new Collection()
-client.aliases = new Collection();
+client.aliases = new Collection() 
 
 require(`./handler.js`)(client)
 

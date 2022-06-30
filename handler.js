@@ -7,7 +7,7 @@ module.exports = async(client) => {
     const commandFiles = await prom(`${process.cwd()}/commands/**/*.js`)
     commandFiles.map(async v => {
         const file = require(v)
-        const s = v.split("/");
+        const s = v.split("/") 
         const dir = s[s.length - 2]
 
         if (file.name) {
@@ -21,7 +21,7 @@ module.exports = async(client) => {
 
     })
 
-    const eventFiles = await prom(`${process.cwd()}/events/*.js`);
+    const eventFiles = await prom(`${process.cwd()}/events/*.js`) 
     eventFiles.map(async v => require(v))
 
 
@@ -29,7 +29,7 @@ module.exports = async(client) => {
         `${process.cwd()}/slashCommands/*/*.js`
     )
 
-    const slashCommandsArray = [];
+    const slashCommandsArray = [] 
     slashCommands.map(async v => {
         const file = require(v)
         if (!file.name) return
